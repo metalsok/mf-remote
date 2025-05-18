@@ -3,7 +3,7 @@ import { ModuleFederationConfig } from '@nx/module-federation';
 const config: ModuleFederationConfig = {
   name: 'remote',
   exposes: {
-    './Widget': './src/app/app.component.ts',
+    './Widget': 'apps/remote/src/app/app.component.ts'
   },
 };
 
