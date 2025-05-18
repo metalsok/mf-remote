@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'mf-remote-nx-welcome',
   imports: [CommonModule],
-  template: `<div>MF remote works!</div>`,
+  template: `<div>MF remote works! Or not</div>`,
   styles: [],
   encapsulation: ViewEncapsulation.None,
 })
