@@ -1,5 +1,44 @@
 /******/ var __webpack_modules__ = ({
 
+/***/ 532:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+var moduleMap = {
+	"./Widget": () => {
+		return Promise.all(/* __federation_expose_Widget */[__webpack_require__.e(46), __webpack_require__.e(76)]).then(() => (() => ((__webpack_require__(9292)))));
+	}
+};
+var get = (module, getScope) => {
+	__webpack_require__.R = getScope;
+	getScope = (
+		__webpack_require__.o(moduleMap, module)
+			? moduleMap[module]()
+			: Promise.resolve().then(() => {
+				throw new Error('Module "' + module + '" does not exist in container.');
+			})
+	);
+	__webpack_require__.R = undefined;
+	return getScope;
+};
+var init = (shareScope, initScope, remoteEntryInitOptions) => {
+	return __webpack_require__.federation.bundlerRuntime.initContainerEntry({	webpackRequire: __webpack_require__,
+		shareScope: shareScope,
+		initScope: initScope,
+		remoteEntryInitOptions: remoteEntryInitOptions,
+		shareScopeKey: "default"
+	})
+};
+
+__webpack_require__(7608)
+
+// This exports getters to disallow modifications
+__webpack_require__.d(exports, {
+	get: () => (get),
+	init: () => (init)
+});
+
+/***/ }),
+
 /***/ 993:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -4870,45 +4909,6 @@ exports.registerRemotes = registerRemotes;
 
 /***/ }),
 
-/***/ 5278:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-var moduleMap = {
-	"./Routes": () => {
-		return Promise.all(/* __federation_expose_Routes */[__webpack_require__.e(46), __webpack_require__.e(124), __webpack_require__.e(76)]).then(() => (() => ((__webpack_require__(4646)))));
-	}
-};
-var get = (module, getScope) => {
-	__webpack_require__.R = getScope;
-	getScope = (
-		__webpack_require__.o(moduleMap, module)
-			? moduleMap[module]()
-			: Promise.resolve().then(() => {
-				throw new Error('Module "' + module + '" does not exist in container.');
-			})
-	);
-	__webpack_require__.R = undefined;
-	return getScope;
-};
-var init = (shareScope, initScope, remoteEntryInitOptions) => {
-	return __webpack_require__.federation.bundlerRuntime.initContainerEntry({	webpackRequire: __webpack_require__,
-		shareScope: shareScope,
-		initScope: initScope,
-		remoteEntryInitOptions: remoteEntryInitOptions,
-		shareScopeKey: "default"
-	})
-};
-
-__webpack_require__(7608)
-
-// This exports getters to disallow modifications
-__webpack_require__.d(exports, {
-	get: () => (get),
-	init: () => (init)
-});
-
-/***/ }),
-
 /***/ 7608:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
@@ -5019,7 +5019,7 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /******/ 	if(!__webpack_require__.federation){
 /******/ 		__webpack_require__.federation = {
 /******/ 			initOptions: {"name":"remote","remotes":[],"shareStrategy":"version-first"},
-/******/ 			chunkMatcher: function(chunkId) {return !/^(124|287|46)$/.test(chunkId)},
+/******/ 			chunkMatcher: function(chunkId) {return 46 != chunkId},
 /******/ 			rootOutputDir: "",
 /******/ 			initialConsumes: undefined,
 /******/ 			bundlerRuntimeOptions: {}
@@ -5069,7 +5069,7 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /******/ 	// This function allow to reference async chunks
 /******/ 	__webpack_require__.u = (chunkId) => {
 /******/ 		// return url for filenames based on template
-/******/ 		return "" + (chunkId === 76 ? "common" : chunkId) + "." + {"76":"40f2044fa6a27aa5","203":"54eeed06bea951ab","271":"57e9d01bbe3fcb6a","353":"38e1533584a77f33","382":"dd622554533c5e08","463":"82908a81a656bd11","495":"ff13c4f0558a025b","716":"89db3f4e91c0b317"}[chunkId] + ".js";
+/******/ 		return "" + (chunkId === 76 ? "common" : chunkId) + "." + {"76":"7c02dfe5b86900c4","353":"38e1533584a77f33","382":"72a9379962d2a33e","463":"82908a81a656bd11","669":"f82e6ed57af02476","818":"c1ebf09c9358d704"}[chunkId] + ".js";
 /******/ 	};
 /******/ })();
 /******/ 
@@ -5185,13 +5185,12 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /******/ 		var promises = [];
 /******/ 		switch(name) {
 /******/ 			case "default": {
-/******/ 				register("@angular/common/http", "19.2.11", () => (Promise.all([__webpack_require__.e(46), __webpack_require__.e(203), __webpack_require__.e(495)]).then(() => (() => (__webpack_require__(495))))));
+/******/ 				register("@angular/common/http", "19.2.11", () => (Promise.all([__webpack_require__.e(46), __webpack_require__.e(669)]).then(() => (() => (__webpack_require__(3669))))));
 /******/ 				register("@angular/common", "19.2.11", () => (Promise.all([__webpack_require__.e(46), __webpack_require__.e(382)]).then(() => (() => (__webpack_require__(6382))))));
 /******/ 				register("@angular/core/primitives/di", "19.2.11", () => (__webpack_require__.e(76).then(() => (() => (__webpack_require__(2056))))));
 /******/ 				register("@angular/core/primitives/signals", "19.2.11", () => (Promise.all([__webpack_require__.e(353), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(3488))))));
-/******/ 				register("@angular/core", "19.2.11", () => (Promise.all([__webpack_require__.e(353), __webpack_require__.e(76), __webpack_require__.e(716)]).then(() => (() => (__webpack_require__(2716))))));
-/******/ 				register("@angular/platform-browser", "19.2.11", () => (Promise.all([__webpack_require__.e(46), __webpack_require__.e(124), __webpack_require__.e(463)]).then(() => (() => (__webpack_require__(7463))))));
-/******/ 				register("@angular/router", "19.2.11", () => (Promise.all([__webpack_require__.e(46), __webpack_require__.e(203), __webpack_require__.e(124), __webpack_require__.e(271), __webpack_require__.e(287)]).then(() => (() => (__webpack_require__(271))))));
+/******/ 				register("@angular/core", "19.2.11", () => (Promise.all([__webpack_require__.e(353), __webpack_require__.e(76), __webpack_require__.e(818)]).then(() => (() => (__webpack_require__(2818))))));
+/******/ 				register("@angular/platform-browser", "19.2.11", () => (Promise.all([__webpack_require__.e(46), __webpack_require__.e(463)]).then(() => (() => (__webpack_require__(7463))))));
 /******/ 			}
 /******/ 			break;
 /******/ 		}
@@ -5225,7 +5224,7 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /******/ /* webpack/runtime/sharing */
 /******/ (() => {
 /******/ 	__webpack_require__.federation.initOptions.shared = {	"@angular/common/http": [{	version: "19.2.11",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(46), __webpack_require__.e(203), __webpack_require__.e(495)]).then(() => (() => (__webpack_require__(495))))),
+/******/ 			get: () => (Promise.all([__webpack_require__.e(46), __webpack_require__.e(669)]).then(() => (() => (__webpack_require__(3669))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"~19.2.0","strictVersion":true,"singleton":true}},],	"@angular/common": [{	version: "19.2.11",
 /******/ 			get: () => (Promise.all([__webpack_require__.e(46), __webpack_require__.e(382)]).then(() => (() => (__webpack_require__(6382))))),
@@ -5237,13 +5236,10 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /******/ 			get: () => (Promise.all([__webpack_require__.e(353), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(3488))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"~19.2.0","strictVersion":true,"singleton":true}},],	"@angular/core": [{	version: "19.2.11",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(353), __webpack_require__.e(76), __webpack_require__.e(716)]).then(() => (() => (__webpack_require__(2716))))),
+/******/ 			get: () => (Promise.all([__webpack_require__.e(353), __webpack_require__.e(76), __webpack_require__.e(818)]).then(() => (() => (__webpack_require__(2818))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"~19.2.0","strictVersion":true,"singleton":true}},],	"@angular/platform-browser": [{	version: "19.2.11",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(46), __webpack_require__.e(124), __webpack_require__.e(463)]).then(() => (() => (__webpack_require__(7463))))),
-/******/ 			scope: ["default"],
-/******/ 			shareConfig: {"eager":false,"requiredVersion":"~19.2.0","strictVersion":true,"singleton":true}},],	"@angular/router": [{	version: "19.2.11",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(46), __webpack_require__.e(203), __webpack_require__.e(124), __webpack_require__.e(271), __webpack_require__.e(287)]).then(() => (() => (__webpack_require__(271))))),
+/******/ 			get: () => (Promise.all([__webpack_require__.e(46), __webpack_require__.e(463)]).then(() => (() => (__webpack_require__(7463))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"~19.2.0","strictVersion":true,"singleton":true}},],}
 /******/ 	__webpack_require__.S = {};
@@ -5275,7 +5271,7 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /******/ 	var installedModules = {};
 /******/ 	var moduleToHandlerMapping = {
 /******/ 		7046: {
-/******/ 			getter: () => (Promise.all([__webpack_require__.e(353), __webpack_require__.e(76), __webpack_require__.e(716)]).then(() => (() => (__webpack_require__(2716))))),
+/******/ 			getter: () => (Promise.all([__webpack_require__.e(353), __webpack_require__.e(76), __webpack_require__.e(818)]).then(() => (() => (__webpack_require__(2818))))),
 /******/ 			shareInfo: {
 /******/ 				shareConfig: {
 /******/ 				  "fixedDependencies": false,
@@ -5287,20 +5283,6 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /******/ 				scope: ["default"],
 /******/ 			},
 /******/ 			shareKey: "@angular/core",
-/******/ 		},
-/******/ 		9124: {
-/******/ 			getter: () => (__webpack_require__.e(382).then(() => (() => (__webpack_require__(6382))))),
-/******/ 			shareInfo: {
-/******/ 				shareConfig: {
-/******/ 				  "fixedDependencies": false,
-/******/ 				  "requiredVersion": "~19.2.0",
-/******/ 				  "strictVersion": true,
-/******/ 				  "singleton": true,
-/******/ 				  "eager": false
-/******/ 				},
-/******/ 				scope: ["default"],
-/******/ 			},
-/******/ 			shareKey: "@angular/common",
 /******/ 		},
 /******/ 		810: {
 /******/ 			getter: () => (__webpack_require__.e(76).then(() => (() => (__webpack_require__(3488))))),
@@ -5331,7 +5313,7 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /******/ 			shareKey: "@angular/core/primitives/di",
 /******/ 		},
 /******/ 		5394: {
-/******/ 			getter: () => (Promise.all([__webpack_require__.e(203), __webpack_require__.e(495)]).then(() => (() => (__webpack_require__(495))))),
+/******/ 			getter: () => (__webpack_require__.e(669).then(() => (() => (__webpack_require__(3669))))),
 /******/ 			shareInfo: {
 /******/ 				shareConfig: {
 /******/ 				  "fixedDependencies": false,
@@ -5344,8 +5326,8 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /******/ 			},
 /******/ 			shareKey: "@angular/common/http",
 /******/ 		},
-/******/ 		2287: {
-/******/ 			getter: () => (__webpack_require__.e(463).then(() => (() => (__webpack_require__(7463))))),
+/******/ 		9124: {
+/******/ 			getter: () => (__webpack_require__.e(382).then(() => (() => (__webpack_require__(6382))))),
 /******/ 			shareInfo: {
 /******/ 				shareConfig: {
 /******/ 				  "fixedDependencies": false,
@@ -5356,7 +5338,7 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /******/ 				},
 /******/ 				scope: ["default"],
 /******/ 			},
-/******/ 			shareKey: "@angular/platform-browser",
+/******/ 			shareKey: "@angular/common",
 /******/ 		}
 /******/ 	};
 /******/ 	// no consumes in initial chunks
@@ -5364,16 +5346,11 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /******/ 		"46": [
 /******/ 			7046
 /******/ 		],
-/******/ 		"124": [
+/******/ 		"463": [
+/******/ 			5394,
 /******/ 			9124
 /******/ 		],
-/******/ 		"287": [
-/******/ 			2287
-/******/ 		],
-/******/ 		"463": [
-/******/ 			5394
-/******/ 		],
-/******/ 		"716": [
+/******/ 		"818": [
 /******/ 			810,
 /******/ 			9980
 /******/ 		]
@@ -5410,7 +5387,7 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /******/ 				if(installedChunkData) {
 /******/ 					promises.push(installedChunkData[2]);
 /******/ 				} else {
-/******/ 					if(!/^(124|287|46)$/.test(chunkId)) {
+/******/ 					if(46 != chunkId) {
 /******/ 						// setup Promise in chunk cache
 /******/ 						var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
 /******/ 						promises.push(installedChunkData[2] = promise);
@@ -5485,7 +5462,7 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /******/ // module cache are used so entry inlining is disabled
 /******/ // startup
 /******/ // Load entry module and return exports
-/******/ var __webpack_exports__ = __webpack_require__(5278);
+/******/ var __webpack_exports__ = __webpack_require__(532);
 /******/ var __webpack_exports__get = __webpack_exports__.get;
 /******/ var __webpack_exports__init = __webpack_exports__.init;
 /******/ export { __webpack_exports__get as get, __webpack_exports__init as init };

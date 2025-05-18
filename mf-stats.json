@@ -38,11 +38,11 @@
         "js": {
           "async": [
             "353.38e1533584a77f33.js",
-            "common.40f2044fa6a27aa5.js",
-            "716.89db3f4e91c0b317.js"
+            "common.7c02dfe5b86900c4.js",
+            "818.c1ebf09c9358d704.js"
           ],
           "sync": [
-            "495.ff13c4f0558a025b.js"
+            "669.f82e6ed57af02476.js"
           ]
         },
         "css": {
@@ -65,11 +65,11 @@
         "js": {
           "async": [
             "353.38e1533584a77f33.js",
-            "common.40f2044fa6a27aa5.js",
-            "716.89db3f4e91c0b317.js"
+            "common.7c02dfe5b86900c4.js",
+            "818.c1ebf09c9358d704.js"
           ],
           "sync": [
-            "382.dd622554533c5e08.js"
+            "382.72a9379962d2a33e.js"
           ]
         },
         "css": {
@@ -91,16 +91,14 @@
       "assets": {
         "js": {
           "async": [
-            "382.dd622554533c5e08.js",
             "353.38e1533584a77f33.js",
-            "716.89db3f4e91c0b317.js",
+            "818.c1ebf09c9358d704.js",
             "463.82908a81a656bd11.js",
-            "203.54eeed06bea951ab.js",
-            "271.57e9d01bbe3fcb6a.js",
-            "495.ff13c4f0558a025b.js"
+            "382.72a9379962d2a33e.js",
+            "669.f82e6ed57af02476.js"
           ],
           "sync": [
-            "common.40f2044fa6a27aa5.js"
+            "common.7c02dfe5b86900c4.js"
           ]
         },
         "css": {
@@ -122,16 +120,14 @@
       "assets": {
         "js": {
           "async": [
-            "382.dd622554533c5e08.js",
             "353.38e1533584a77f33.js",
-            "716.89db3f4e91c0b317.js",
+            "818.c1ebf09c9358d704.js",
             "463.82908a81a656bd11.js",
-            "203.54eeed06bea951ab.js",
-            "271.57e9d01bbe3fcb6a.js",
-            "495.ff13c4f0558a025b.js"
+            "382.72a9379962d2a33e.js",
+            "669.f82e6ed57af02476.js"
           ],
           "sync": [
-            "common.40f2044fa6a27aa5.js"
+            "common.7c02dfe5b86900c4.js"
           ]
         },
         "css": {
@@ -154,7 +150,7 @@
         "js": {
           "async": [],
           "sync": [
-            "716.89db3f4e91c0b317.js"
+            "818.c1ebf09c9358d704.js"
           ]
         },
         "css": {
@@ -176,45 +172,14 @@
       "assets": {
         "js": {
           "async": [
-            "382.dd622554533c5e08.js",
             "353.38e1533584a77f33.js",
-            "common.40f2044fa6a27aa5.js",
-            "716.89db3f4e91c0b317.js",
-            "203.54eeed06bea951ab.js",
-            "495.ff13c4f0558a025b.js"
+            "common.7c02dfe5b86900c4.js",
+            "818.c1ebf09c9358d704.js",
+            "382.72a9379962d2a33e.js",
+            "669.f82e6ed57af02476.js"
           ],
           "sync": [
             "463.82908a81a656bd11.js"
-          ]
-        },
-        "css": {
-          "async": [],
-          "sync": []
-        }
-      },
-      "usedIn": []
-    },
-    {
-      "singleton": true,
-      "requiredVersion": "~19.2.0",
-      "shareScope": "default",
-      "strictVersion": true,
-      "name": "@angular/router",
-      "version": "19.2.11",
-      "eager": false,
-      "id": "remote:@angular/router",
-      "assets": {
-        "js": {
-          "async": [
-            "382.dd622554533c5e08.js",
-            "353.38e1533584a77f33.js",
-            "common.40f2044fa6a27aa5.js",
-            "716.89db3f4e91c0b317.js",
-            "463.82908a81a656bd11.js",
-            "495.ff13c4f0558a025b.js"
-          ],
-          "sync": [
-            "271.57e9d01bbe3fcb6a.js"
           ]
         },
         "css": {
@@ -228,11 +193,11 @@
   "remotes": [],
   "exposes": [
     {
-      "path": "./Routes",
-      "id": "remote:Routes",
-      "name": "Routes",
+      "path": "./Widget",
+      "id": "remote:Widget",
+      "name": "Widget",
       "requires": [],
-      "file": "apps/remote/src/app/remote-entry/entry.routes.ts",
+      "file": "apps/remote/src/app/app.component.ts",
       "assets": {
         "js": {
           "async": [],

@@ -1,0 +1,1 @@
+(self.webpackChunkremote=self.webpackChunkremote||[]).push([[64],{64:(r,s,e)=>{var o=e(2287);const n={providers:[(0,e(7046).provideZoneChangeDetection)({eventCoalescing:!0})]};var t=e(9292);(0,o.bootstrapApplication)(t.AppComponent,n).catch(a=>console.error(a))}}]);
